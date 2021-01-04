@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Testing The Application'
+            echo '"Get the Driver Path ${ChromeDriverPath}"'
           }
         }
 
@@ -24,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    ChromeDriverPath = '/Users/rajeshambati/repo/fcc-tools/tools_reports/chromedriver/2.42/windows'
   }
 }
