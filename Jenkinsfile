@@ -29,8 +29,11 @@ pipeline {
     }
 
     stage('Deploy') {
+       when{
+                  branch 'main'
+              }
       parallel {
-        stage('Deploy') {
+       stage('Deploy') {
           steps {
             input(message: 'Do you Want to Deploy?', id: 'OK')
             echo 'Deploying the App in the IIS Server'
