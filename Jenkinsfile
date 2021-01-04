@@ -21,7 +21,7 @@ pipeline {
             LocalVariable = "HelloLocal"
           }
           steps {
-            writeFile(file: 'LogTextFile.txt', text: 'This is a Chrome Driver Path : ${ChromeDriverPath} and Local Variable is : ${LocalVariable}')
+            writeFile(file: 'LogTextFile.txt', text: "This is a Chrome Driver Path : ${ChromeDriverPath} and Local Variable is : ${LocalVariable}")
           }
         }
 
