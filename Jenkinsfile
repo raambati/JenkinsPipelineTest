@@ -36,7 +36,7 @@ pipeline {
 
         stage('Artefacts') {
           steps {
-            archiveArtifacts 'LogTestFile.txt'
+            archiveArtifacts 'LogTextFile.txt'
           }
         }
 
