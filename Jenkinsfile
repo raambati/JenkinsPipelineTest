@@ -21,6 +21,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
+        input(message: 'Do you Want to Deploy?', id: 'OK')
         echo 'Deploying the App in the IIS Server'
       }
     }
