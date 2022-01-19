@@ -1,4 +1,4 @@
---- welcome.groovy
+-- welcome.groovy
 
 def call (String name = 'User'){
     echo "Welcome, ${name}"
